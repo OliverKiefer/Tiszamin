@@ -12,3 +12,5 @@ Főbb "Hatóanyagaink" (Fejlesztés alatt):
   Immunitás 🛡️: Mentelmi jogot ad a megfázás és a fáradtság ellen.
   Árad-a-C 🍋: Magas dózisú C-vitamin, amitől garantáltan megindul az energia.
   Napszemüveg-formula 😎: Segít, hogy akkor is tisztán láss, ha túl erős a reflektorfény.
+
+Építsünk egy működő, és emberséges közösséget. Nézz a fiadra, nézz a lányodra, gondolj a hazádra, 
