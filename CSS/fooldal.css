@@ -7,7 +7,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #162c32;
     box-shadow: 0 0 10px #aaa;
   }
   nav div {
@@ -41,6 +41,8 @@ body {
     padding: 0;
     width: 100%;
     list-style: none;
+    
+    
   }
   @media screen and (min-width: 40em) {
     nav div ul {
@@ -57,11 +59,16 @@ body {
     display: block;
     padding: 1em;
     text-decoration: none;
-    color: #222;
+    color: white;
+    background-color: rgb(160, 160, 160);
     line-height: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
   }
   nav div ul li a :hover {
-    background-color: #efefef;
+    background-color: black;
+    transform: scale(1.25);
   }
   
   nav div input[type="checkbox"] {
@@ -98,28 +105,29 @@ body {
     }
   }
   a:hover {
-    background-color: #efefef;
+    background-color: black;
+    transform: scale(1.25);
   }
-  .kep {
-    margin-top: 50px;
-    margin: 0;
-    padding: 30px;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  .kep img {
-    width: 700px;
-    height: 500px;
-    object-fit: cover;
-    
-  }
+    .kep {
+      margin-top: 50px;
+      margin: 0;
+      padding: 30px;
+      background-size: cover;
+      height: 800px;
+      width: 100%;
+      position: relative;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+    .kep img {
+      width: 700px;
+      height: 500px;
+      object-fit: cover;
+      
+    }
   
   @media screen and (max-width: 768px) {
     .kep {
@@ -226,5 +234,4 @@ body {
     border-radius: 25px;
     font-weight: bold;
   }
-  
   
