@@ -107,20 +107,21 @@ body {
   a:hover {
     background-color: black;
     transform: scale(1.25);
+    animation-name: pulseAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
   }
     .kep {
-      margin-top: 50px;
-      margin: 0;
-      padding: 30px;
+      height: 600px;
+      background-image: url('../IMG/logo.png');
       background-size: cover;
-      height: 800px;
-      width: 100%;
-      position: relative;
-      background-repeat: no-repeat;
-      box-sizing: border-box;
+      background-position: center;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
+      
+      
     }
     .kep img {
       width: 700px;
@@ -234,4 +235,10 @@ body {
     border-radius: 25px;
     font-weight: bold;
   }
+  @keyframes pulseAnimation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+  
+  
   
