@@ -27,7 +27,7 @@ body {
     flex-direction: row-reverse;
   }
   nav div span {
-    background-color: #222;
+    background-color: white;
     height: 2px;
     width: 1.5rem;
     display: block;
@@ -87,6 +87,9 @@ body {
   
   nav div input[type="checkbox"]:checked + ul {
     display: flex;
+  }
+  .element{
+    margin: 10px;
   }
   
   nav div label {
@@ -358,6 +361,13 @@ body {
     font-size: 1.1rem;
     color: #333;
     margin-top: auto; 
+  }
+  .nepszeru{
+    padding-left: 100px;
+    border: 2px black solid;
+    border-radius: 20px;
+    margin-right:74%;
+    margin-left: 10%;
   }
   
   
