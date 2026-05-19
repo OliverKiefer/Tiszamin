@@ -1,0 +1,179 @@
+:root {
+    --tisza-kek: #00939d;
+    --tisza-sotet: #006b72;
+    --border: #e2e8f0;
+    --bg-light: #f8fafc;
+    --szoveg-sotet: #1e293b;
+    --szoveg-halvany: #64748b;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: 'Inter', -apple-system, sans-serif; /* Használj Inter betűtípust a clean hatáshoz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Hogy mobilon se érjen a széléhez */
+}
+
+.form-card {
+    background: white;
+    width: 100%;
+    max-width: 420px; /* Kicsit szélesebb a jobb elrendezésért */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+/* === FEJLÉC STÍLUSA (Nagyobb Arccal) === */
+.form-header {
+    padding: 30px 24px;
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-avatar {
+    width: 100px; /* JELENTŐSEN MEGNÖVELT MÉRET */
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white; /* Vastagabb, elegáns fehér keret */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--szoveg-sotet);
+    line-height: 1.2;
+}
+
+.profile-text span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--tisza-kek);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-logo {
+    height: 65px; /* Kicsit nagyobb logo, hogy egyensúlyban legyen */
+    opacity: 0.9;
+}
+
+/* === ŰRLAP TÖRZSE (Marad a Clean stílus) === */
+.form-body {
+    padding: 30px 24px;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--szoveg-sotet);
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    color: var(--szoveg-sotet);
+}
+
+input[type="text"]::placeholder {
+    color: #cbd5e0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--tisza-kek);
+    box-shadow: 0 0 0 4px rgba(0, 147, 157, 0.12);
+}
+
+/* Gombok */
+.btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    text-transform: uppercase; /* Komolyabb, pártos hatás */
+    letter-spacing: 1px;
+}
+
+.btn-main {
+    background: var(--tisza-kek);
+    color: white;
+}
+
+.btn-main:hover {
+    background: var(--tisza-sotet);
+}
+
+.btn-outline {
+    background: white;
+    color: var(--tisza-kek);
+    border: 2px solid var(--tisza-kek);
+    margin-top: 15px;
+}
+
+.btn-outline:hover {
+    background: #f0fdfa;
+}
+
+/* Elválasztó */
+.divider {
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border);
+}
+
+.divider span {
+    background: white;
+    padding: 0 15px;
+    position: relative;
+    font-size: 0.75rem;
+    color: var(--szoveg-halvany);
+    font-weight: 700;
+}

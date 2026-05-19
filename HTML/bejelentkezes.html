@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validátor</title>
+    <link rel="stylesheet" href="../CSS/bejelntkezes.css">
+</head>
+<body>
+    <body>
+        <div class="form-card">
+            <div class="form-header">
+                <div class="profile-section">
+                
+                    <div class="profile-text">
+                        <h1>Bejelentkezés</h1>
+                        <span>Bejelentkező Portál</span>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="form-body">
+                <div class="input-group">
+                    <label for="tajszam">Születési hely+Idő</label>
+                    <input type="text" id="tajszam" placeholder="2008.12.23 Baja">
+                </div>
+    
+                <div class="input-group">
+                    <label for="szemelyiIg">Személyi igazolvány</label>
+                    <input type="text" id="szemelyiIg" placeholder="123456AB">
+                </div>
+    
+                <div class="input-group">
+                    <label for="nev">Teljes név</label>
+                    <input type="text" id="nev" placeholder="Balassi Bálint">
+                </div>
+    
+                <button class="btn btn-main" onclick="ellenorzes()">Ellenőrzés</button>
+    
+                <div class="divider"><span>VAGY</span></div>
+    
+                <div class="input-group">
+                    <label for="email">Email cím</label>
+                    <input type="text" id="email" placeholder="szocsgabor@turr.hu">
+                </div>
+    
+                <button class="btn btn-outline" onclick="ellenorzesEmail()">Email validálása</button>
+            </div>
+        </div>
+        <script src="../JS/js.js"></script>
+        <script src="../JS/email.js"></script>
+    </body>
+</html>
