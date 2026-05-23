@@ -1,179 +1,157 @@
 :root {
-    --tisza-kek: #00939d;
-    --tisza-sotet: #006b72;
-    --border: #e2e8f0;
-    --bg-light: #f8fafc;
-    --szoveg-sotet: #1e293b;
-    --szoveg-halvany: #64748b;
+  --bg: #e5eef6;
+  --card: #ffffff;
+  --accent: #0b5d7b;
+  --accent-soft: #dff3f7;
+  --border: #d7e2eb;
+  --text: #163443;
+  --muted: #667b8a;
 }
 
 body {
-    background-color: #f1f5f9;
-    font-family: 'Inter', -apple-system, sans-serif; /* Használj Inter betűtípust a clean hatáshoz */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px; /* Hogy mobilon se érjen a széléhez */
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at top, rgba(11, 93, 123, 0.17), transparent 25%),
+    linear-gradient(180deg, #f4fbff 0%, #ebf5fb 100%);
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text);
 }
 
 .form-card {
-    background: white;
-    width: 100%;
-    max-width: 420px; /* Kicsit szélesebb a jobb elrendezésért */
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    border: 1px solid var(--border);
+  width: min(420px, calc(100% - 32px));
+  background: var(--card);
+  border-radius: 24px;
+  box-shadow: 0 28px 60px rgba(15, 47, 67, 0.12);
+  overflow: hidden;
+  border: 1px solid rgba(11, 93, 123, 0.08);
 }
 
-/* === FEJLÉC STÍLUSA (Nagyobb Arccal) === */
 .form-header {
-    padding: 30px 24px;
-    background: var(--bg-light);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
+  padding: 32px 28px;
+  background: var(--accent);
+  color: white;
+  text-align: center;
 }
 
-.profile-section {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+.form-header h1 {
+  margin: 0;
+  font-size: 1.55rem;
+  letter-spacing: 0.02em;
 }
 
-.profile-avatar {
-    width: 100px; /* JELENTŐSEN MEGNÖVELT MÉRET */
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white; /* Vastagabb, elegáns fehér keret */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+.form-header span {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.profile-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-text h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: var(--szoveg-sotet);
-    line-height: 1.2;
-}
-
-.profile-text span {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--tisza-kek);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.form-logo {
-    height: 65px; /* Kicsit nagyobb logo, hogy egyensúlyban legyen */
-    opacity: 0.9;
-}
-
-/* === ŰRLAP TÖRZSE (Marad a Clean stílus) === */
 .form-body {
-    padding: 30px 24px;
+  padding: 30px 28px 34px;
+}
+
+.form-body h1 {
+  font-size: 1rem;
+  margin: 0 0 18px;
+  font-weight: 700;
 }
 
 .input-group {
-    margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--szoveg-sotet);
-    margin-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  color: var(--muted);
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 14px 16px;
-    border: 2px solid var(--border);
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-    color: var(--szoveg-sotet);
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  font-size: 1rem;
+  color: var(--text);
+  background: #f8fbfd;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 input[type="text"]::placeholder {
-    color: #cbd5e0;
+  color: #9aa8b3;
 }
 
 input[type="text"]:focus {
-    outline: none;
-    border-color: var(--tisza-kek);
-    box-shadow: 0 0 0 4px rgba(0, 147, 157, 0.12);
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(11, 93, 123, 0.12);
 }
 
-/* Gombok */
 .btn {
-    width: 100%;
-    padding: 16px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.2s;
-    border: none;
-    text-transform: uppercase; /* Komolyabb, pártos hatás */
-    letter-spacing: 1px;
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
 }
 
 .btn-main {
-    background: var(--tisza-kek);
-    color: white;
-}
-
-.btn-main:hover {
-    background: var(--tisza-sotet);
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 14px 30px rgba(11, 93, 123, 0.18);
 }
 
 .btn-outline {
-    background: white;
-    color: var(--tisza-kek);
-    border: 2px solid var(--tisza-kek);
-    margin-top: 15px;
+  background: white;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  margin-top: 14px;
 }
 
 .btn-outline:hover {
-    background: #f0fdfa;
+  box-shadow: 0 10px 24px rgba(11, 93, 123, 0.1);
 }
 
-/* Elválasztó */
 .divider {
-    text-align: center;
-    position: relative;
-    margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
 }
 
-.divider::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: var(--border);
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
 .divider span {
-    background: white;
-    padding: 0 15px;
-    position: relative;
-    font-size: 0.75rem;
-    color: var(--szoveg-halvany);
-    font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.vissza{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
 }

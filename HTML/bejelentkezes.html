@@ -13,8 +13,9 @@
                 <div class="profile-section">
                 
                     <div class="profile-text">
-                        <h1>Bejelentkezés</h1>
-                        <span>Bejelentkező Portál</span>
+                        <h1>Fiók Létrehozása</h1>
+                        <span>Létrehozó Portál</span>
+                        <a href="fooldal.html" class="vissza">Vissza a Főoldalra</a>
                     </div>
                 </div>
                 
@@ -22,13 +23,18 @@
     
             <div class="form-body">
                 <div class="input-group">
-                    <label for="tajszam">Születési hely+Idő</label>
-                    <input type="text" id="tajszam" placeholder="2008.12.23 Baja">
+                    <label for="tajszam">Születési hely</label>
+                    <input type="text" id="szulHely" placeholder="Baja">
+                </div>
+
+                <div class="input-group">
+                    <label for="tajszam">Születési Idő</label>
+                    <input type="text" id="szulIdo" placeholder="2008.12.23">
                 </div>
     
                 <div class="input-group">
-                    <label for="szemelyiIg">Személyi igazolvány</label>
-                    <input type="text" id="szemelyiIg" placeholder="123456AB">
+                    <label for="szemelyiIg">Jelszó</label>
+                    <input type="text" id="jelszoLetrehozas" placeholder="KiskutyaFüle1234">
                 </div>
     
                 <div class="input-group">
@@ -36,19 +42,26 @@
                     <input type="text" id="nev" placeholder="Balassi Bálint">
                 </div>
     
-                <button class="btn btn-main" onclick="ellenorzes()">Ellenőrzés</button>
+                <button class="btn btn-main" onclick="ellenorzes()">Fiók Létrehozása</button>
     
                 <div class="divider"><span>VAGY</span></div>
     
+                <h1>Bejelentkezés</h1>
                 <div class="input-group">
                     <label for="email">Email cím</label>
                     <input type="text" id="email" placeholder="szocsgabor@turr.hu">
                 </div>
+
+                <div class="input-group">
+                    <label for="email">Jelszó</label>
+                    <input type="text" id="jelszoBejelentkezes" placeholder="KiskutyaFüle1234">
+                </div>
     
-                <button class="btn btn-outline" onclick="ellenorzesEmail()">Email validálása</button>
+                <button class="btn btn-outline" onclick="ellenorzesEmail()">Bejelentkezés</button>
             </div>
+            
         </div>
-        <script src="../JS/js.js"></script>
-        <script src="../JS/email.js"></script>
+        <script src="../JS/letrehozas.js"></script>
+        <script src="../JS/bejelentkezes.js"></script>
     </body>
 </html>

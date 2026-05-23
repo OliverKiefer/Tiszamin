@@ -404,5 +404,10 @@ body {
     font-size: 30px;
     text-align: center;
   }
+  .login{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+  }
   
   
