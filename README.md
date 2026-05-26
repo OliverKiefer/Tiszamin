@@ -13,4 +13,4 @@ Főbb Oldalaink (Fejlesztés alatt):
   Fehérje, Kreatin, Vitaminok: Összes eladó termékeink, amiket meg tud vásárolni
   
 
-Építsünk egy működő, és emberséges közösséget. Nézz a fiadra, nézz a lányodra, gondolj a hazádra, 
+Építsünk egy működő, és emberséges közösséget. Nézz a fiadra, nézz a lányodra, gondolj a hazádra, vásárolj a TiszaMin boltjában 
