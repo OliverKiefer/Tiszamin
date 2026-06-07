@@ -1,59 +1,59 @@
-.google-sans-flex-sor {
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "ROND" 0;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: white;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fbfc 0%, #ffffff 100%);
   font-family: "Google Sans Flex", sans-serif;
+  color: #1f2d33;
 }
 
 nav {
   display: flex;
   justify-content: center;
   background-color: #162c32;
-  box-shadow: 0 0 10px #aaa;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
+
 nav div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  flex-direction: row-reverse;
+  max-width: 1200px;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
+
 nav div span {
   background-color: white;
   height: 2px;
   width: 1.5rem;
   display: block;
 }
+
 @media screen and (min-width: 40em) {
   nav div {
     align-items: center;
+    flex-wrap: nowrap;
   }
 }
+
 nav div input[type="checkbox"] {
   display: none;
-}
-nav div input[type="checkbox"]:checked + ul {
-  display: flex;
 }
 
 nav div ul {
   display: none;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;
 }
+
 @media screen and (min-width: 40em) {
   nav div ul {
     display: flex;
@@ -65,31 +65,25 @@ nav div ul {
 nav div ul li {
   text-align: center;
 }
+
 nav div ul li a {
-  display: block;
-  padding: 1em;
+  display: inline-block;
+  padding: 0.9em 1.1em;
   text-decoration: none;
   color: white;
-  background-color: rgb(160, 160, 160);
-  line-height: 1rem;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 20px;
-}
-nav div ul li a :hover {
-  background-color: black;
-  transform: scale(1.25);
+  background-color: #4e747d;
+  line-height: 1.2rem;
+  margin: 0.25rem 0.35rem;
+  border-radius: 999px;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
-nav div input[type="checkbox"] {
-  display: none;
-}
-
-nav div input[type="checkbox"]:checked + ul {
-  display: flex;
-}
-.element {
-  margin: 10px;
+nav div ul li a:hover,
+nav div ul li a.active {
+  background-color: #1f3e46;
+  transform: scale(1.05);
 }
 
 nav div label {
@@ -101,22 +95,24 @@ nav div label {
   width: 1.5rem;
   flex-wrap: wrap;
 }
+
 @media screen and (min-width: 40em) {
   nav div label {
     display: none;
   }
 }
+
 .pur-icon {
   width: 140px;
-  height: 75px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
   .pur-icon {
-    width: 100px;
-    height: 50px;
+    width: 110px;
   }
 }
+
 a:hover {
   background-color: black;
   transform: scale(1.25);

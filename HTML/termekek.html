@@ -1,66 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TiszaMin Termékek</title>
-    <link rel="stylesheet" href="../CSS/termekek.css">
+    <link rel="stylesheet" href="../CSS/termekek.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <div>
-            <img src="../IMG/logo.png" alt="icon" class="pur-icon" />
-            <label for="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <input type="checkbox" id="menu" />
-            <a href="bejelentkezes.html" class="login">→</a>
-            <ul>
-                <li><a href="" class="element">Főoldal</a></li>
-                <li><a href="rolunk.html" class="element">Rólunk</a></li>
-                <li><a href="termekek.html" class="element">Termékek</a></li>
-            </ul>
-        </div>
+      <div>
+        <img src="../IMG/logo.png" alt="TiszaMin logo" class="pur-icon" />
+
+        <label for="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <input type="checkbox" id="menu" />
+        <a href="bejelentkezes.html" class="login">→</a>
+        <ul>
+          <li><a href="fooldal.html" class="element">Főoldal</a></li>
+          <li><a href="rolunk.html" class="element">Rólunk</a></li>
+          <li><a href="termekek.html" class="element active">Termékek</a></li>
+        </ul>
+      </div>
     </nav>
 
     <main>
-        <h1>Összes termék</h1>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="../IMG/zeroBarFeherjeszelet.webp" alt="Zero Bar fehérjeszelet">
-                <p class="rating">★★★★★ 1068 Értékelések</p>
-                <h2>Zero Bar fehérjeszelet - 50 g</h2>
-                <p class="price">690 Ft</p>
-                <p class="price-per-kg">13.800 Ft/kg</p>
-                <button class="add-to-cart">+</button>
-            </div>
-            <div class="product-card">
-                <img src="../IMG/wheyZeroFehercsoki.webp" alt="Iso Whey Zero">
-                <p class="rating">★★★★★ 39 352 Értékelések</p>
-                <h2>Iso Whey Zero - 25 g</h2>
-                <p class="price">690 Ft</p>
-                <button class="add-to-cart">+</button>
-            </div>
-            <div class="product-card">
-                <img src="../IMG/proteinBarFeherjeszelet.webp" alt="Protein Bar fehérjeszelet">
-                <p class="rating">★★★★★ 4443 Értékelések</p>
-                <h2>Protein Bar fehérjeszelet - 70 g</h2>
-                <p class="price">690 Ft</p>
-                <button class="add-to-cart">+</button>
-            </div>
-            <div class="product-card">
-                <img src="../IMG/multivitamin.webp" alt="One-A-Day Multivitamin">
-                <p class="rating">★★★★★ 9145 Értékelések</p>
-                <h2>One-A-Day Multivitamin - 100 tabletta</h2>
-                <p class="price">5.830 Ft</p>
-                <p class="old-price">7.290 Ft</p>
-                <button class="add-to-cart">+</button>
-            </div>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="hero-subtitle">Minőségi sporttáplálék minden célhoz</p>
+          <h1>Termékeink</h1>
+          <p>
+            Válogass fehérjék, vitaminok és snackek közül. A TiszaMin termékei
+            segítenek a regenerációban, az erőnövelésben és a mindennapi
+            teljesítményedben.
+          </p>
         </div>
+        <div class="hero-actions">
+          <button class="filter-button active">Összes</button>
+          <button class="filter-button">Fehérje</button>
+          <button class="filter-button">Vitamin</button>
+          <button class="filter-button">Snack</button>
+        </div>
+      </section>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="../IMG/zeroBarFeherjeszelet.webp"
+              alt="Zero Bar fehérjeszelet"
+            />
+          </div>
+          <p class="rating">★★★★★ 1 068 értékelés</p>
+          <h2>Zero Bar fehérjeszelet</h2>
+          <p class="product-detail">50 g, csokoládé íz</p>
+          <p class="price">690 Ft</p>
+          <p class="price-per-kg">13.800 Ft/kg</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/wheyZeroFehercsoki.webp" alt="Iso Whey Zero" />
+          </div>
+          <p class="rating">★★★★★ 39 352 értékelés</p>
+          <h2>Iso Whey Zero</h2>
+          <p class="product-detail">25 g szervetlen fehérje</p>
+          <p class="price">690 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="../IMG/proteinBarFeherjeszelet.webp"
+              alt="Protein Bar fehérjeszelet"
+            />
+          </div>
+          <p class="rating">★★★★★ 4 443 értékelés</p>
+          <h2>Protein Bar fehérjeszelet</h2>
+          <p class="product-detail">70 g, mogyorós íz</p>
+          <p class="price">690 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/multivitamin.webp" alt="One-A-Day Multivitamin" />
+          </div>
+          <p class="rating">★★★★★ 9 145 értékelés</p>
+          <h2>One-A-Day Multivitamin</h2>
+          <p class="product-detail">100 tabletta, napi adag</p>
+          <p class="price">5 830 Ft</p>
+          <p class="old-price">7 290 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/whey1.webp" alt="Pure Bourbon Vanilla Whey" />
+          </div>
+          <p class="rating">★★★★★ 12 134 értékelés</p>
+          <h2>100% Pure Bourbon Vanilla Whey</h2>
+          <p class="product-detail">1000 g, vanília íz</p>
+          <p class="price">13 990 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/kreatin1.webp" alt="Creatine Monohydrate" />
+          </div>
+          <p class="rating">★★★★★ 8 577 értékelés</p>
+          <h2>100% Creatine Monohydrate</h2>
+          <p class="product-detail">300 g, tiszta kreatin</p>
+          <p class="price">7 890 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/protein1.webp" alt="Protein Power" />
+          </div>
+          <p class="rating">★★★★★ 16 320 értékelés</p>
+          <h2>Protein Power</h2>
+          <p class="product-detail">1000 g, csokoládé íz</p>
+          <p class="price">9 690 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/arthro1.webp" alt="Arthro Forte" />
+          </div>
+          <p class="rating">★★★★★ 5 010 értékelés</p>
+          <h2>Arthro Forte</h2>
+          <p class="product-detail">120 tabletta, ízület támogatás</p>
+          <p class="price">9 990 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/hyperMass1.webp" alt="Hyper Mass Protein Powder" />
+          </div>
+          <p class="rating">★★★★★ 7 682 értékelés</p>
+          <h2>Hyper Mass Protein Powder</h2>
+          <p class="product-detail">4000 g, csokoládé íz</p>
+          <p class="price">25 899 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/blackblood.webp" alt="Black Blood" />
+          </div>
+          <p class="rating">★★★★★ 6 420 értékelés</p>
+          <h2>Black Blood</h2>
+          <p class="product-detail">500 g, fekete bors íz</p>
+          <p class="price">8 490 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/camitine.webp" alt="Carnitine" />
+          </div>
+          <p class="rating">★★★★★ 3 108 értékelés</p>
+          <h2>Carnitine</h2>
+          <p class="product-detail">300 ml, folyékony formula</p>
+          <p class="price">5 290 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/creatineCandy.webp" alt="Creatine Candy" />
+          </div>
+          <p class="rating">★★★★★ 4 835 értékelés</p>
+          <h2>Creatine Candy</h2>
+          <p class="product-detail">300 g, kreatin cukorka</p>
+          <p class="price">6 790 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="../IMG/vitaminC1000.webp" alt="Vitamin C 1000" />
+          </div>
+          <p class="rating">★★★★★ 11 320 értékelés</p>
+          <h2>Vitamin C 1000</h2>
+          <p class="product-detail">100 tabletta, napi adag</p>
+          <p class="price">3 490 Ft</p>
+          <button class="add-to-cart">Kosárba</button>
+        </article>
+      </div>
     </main>
-</body>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="../IMG/logo.png" alt="TiszaMin logo" class="footer-logo" />
+          <p>
+            A TiszaMin segít megtalálni a legjobb táplálékkiegészítőket a
+            céljaidhoz, egyszerű és letisztult megjelenéssel.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Gyorslinkek</h3>
+            <a href="bejelentkezes.html">Bejelentkezés</a>
+            <a href="rolunk.html">Rólunk</a>
+            <a href="termekek.html">Termékek</a>
+          </div>
+          <div>
+            <h3>Kapcsolat</h3>
+            <p>info@tiszamin.hu</p>
+            <p>+36 70 227 6567</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 TiszaMin. Minden jog fenntartva.</p>
+      </div>
+    </footer>
+  </body>
 </html>
