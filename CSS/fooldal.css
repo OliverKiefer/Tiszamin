@@ -488,3 +488,73 @@ a:hover {
     max-width: 100%;
   }
 }
+.newsletter {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.form-row label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subscribe-button {
+  background-color: #666;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-button:hover {
+  background-color: #555;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}

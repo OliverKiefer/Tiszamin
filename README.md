@@ -10,7 +10,7 @@ A Tiszamin a modern kor igényeire szabott étrendkiegészítő platform, ahol n
 Főbb Oldalaink (Fejlesztés alatt):
   Főoldal: az oldal főoldala, amin a legtöbb dolgot megtalál
   Rólunk: Dolgozóink, valamint történetünk
-  Fehérje, Kreatin, Vitaminok: Összes eladó termékeink, amiket meg tud vásárolni
+  Termékek: Összes eladó termékeink, amiket meg tud vásárolni
   
 
 Építsünk egy működő, és emberséges közösséget. Nézz a fiadra, nézz a lányodra, gondolj a hazádra, vásárolj a TiszaMin boltjában 
