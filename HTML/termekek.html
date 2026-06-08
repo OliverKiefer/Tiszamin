@@ -209,11 +209,11 @@
       <p>Iratkozz fel hírlevelünkre és értesülj elsőként akcióinkról, újdonságainkról!</p>
       <form class="newsletter-form">
         <div class="form-row">
-          <input type="text" placeholder="Vezetéknév*" required />
-          <input type="text" placeholder="Keresztnév*" required />
+          <input type="text" placeholder="Vezetéknév*" id="vezeteknev" required />
+          <input type="text" placeholder="Keresztnév*" id="keresztnev" required />
         </div>
         <div class="form-row">
-          <input type="email" placeholder="E-mail cím*" required />
+          <input type="email" placeholder="E-mail cím*" id="email" required />
         </div>
         <div class="form-row">
           <label>
@@ -227,7 +227,7 @@
             Feliratkozom a hírlevélre
           </label>
         </div>
-        <button type="submit" class="subscribe-button">FELIRATKOZOM</button>
+        <button type="submit" class="subscribe-button" onclick="ellenorzes()">FELIRATKOZOM</button>
         <button type="button" class="cancel-button">MÉGSE</button>
       </form>
     </section>
@@ -258,5 +258,6 @@
         <p>© 2026 TiszaMin. Minden jog fenntartva.</p>
       </div>
     </footer>
+    <script src="../JS/feliratkozas.js"></script>
   </body>
 </html>
