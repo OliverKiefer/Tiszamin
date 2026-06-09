@@ -6,7 +6,7 @@ const Validator={
 }
 function ellenorzes(){
  const vezeteknev=document.getElementById("vezeteknev").value.trim()
- const vezeteknev=document.getElementById("keresztnevnev").value.trim()
+ const keresztnev=document.getElementById("keresztnevnev").value.trim()
 
  const hibak=[];
  if(!Validator.validate(vezeteknev, "vezeteknev")){
@@ -26,7 +26,7 @@ const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const email = "s@t.h";
 console.log(email.match(emailPattern));
 
-const emailPattern = /^[^\s@]{3,}@[^^\s@]{3,}\.[^\s@]{2,}$/;
+const emailPattern2 = /^[^\s@]{3,}@[^^\s@]{3,}\.[^\s@]{2,}$/;
 function ellenorzesEmail() {
   const email = document.getElementById("email").value.trim();
 
